@@ -4,6 +4,7 @@ This document will describe the structure of each pattern and its behaviour unde
 
 -------------------------------------------------------------------------------
 ## SASS Code Structure
+<pre>
 ├─ app/
     └── styles
         ├── advanced
@@ -23,6 +24,7 @@ This document will describe the structure of each pattern and its behaviour unde
         └── settings
             └── _settings.scss
 6 directories, 18 files
+</pre>
 -------------------------------------------------------------------------------
 ## Maintenance and Best Practices
 -------------------------------------------------------------------------------
