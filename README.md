@@ -7,12 +7,12 @@ This document will describe the structure of each pattern and its behaviour unde
 <pre>
 ├─ app/
     └── styles
-        ├── advanced
+        ├── advanced **All files in folder will @import "../settings/settings";**
         │   ├── _accordions.scss
         │   ├── _carousels.scss
         │   ├── _navigation.scss
         │   └── _tabs.scss
-        ├── basic
+        ├── basic **All files in folder will @import "../settings/settings";**
         │   ├── _buttons.scss
         │   ├── _feedback.scss
         │   ├── _forms.scss
@@ -20,9 +20,9 @@ This document will describe the structure of each pattern and its behaviour unde
         │   ├── _icons.scss
         │   ├── _normalize.scss
         │   └── _typography.scss
-        ├── main.scss
+        ├── main.scss **Will just import all scss files
         └── settings
-            └── _settings.scss
+            └── _settings.scss **Contains all the varibles (colors) that most of the scss files link to
 6 directories, 18 files
 </pre>
 -------------------------------------------------------------------------------
