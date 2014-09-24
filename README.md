@@ -5,24 +5,33 @@ This document will describe the structure of each pattern and its behaviour unde
 -------------------------------------------------------------------------------
 ## SASS Code Structure
 ├─ app/
-│  ├─ styles/
-│  │  └─ main.scss **Imports all scss files @import "foldername/filename";**
-│  │  ├─ advanced/**All files in folder will @import "../settings/settings";**
-│  │  │  └─ _accordions.scss
-│  │  │  └─ _carousels.scss
-│  │  │  └─ _navigation.scss
-│  │  │  └─ _tabs.scss
-│  │  ├─ basic/ **All files in folder will @import "../settings/settings";**
-│  │  │  └─ _buttons.scss
-│  │  │  └─ _feedback.scss
-│  │  │  └─ _forms.scss
-│  │  │  └─ _grid.scss
-│  │  │  └─ _icons.scss
-│  │  │  └─ _normalize.scss
-│  │  │  └─ _typography.scss
-│  │  ├─ settings/
-│  │  │  └─ _settings.scss **Contains all the variables, like colors**
+    └── styles
+        ├── advanced
+        │   ├── _accordions.scss
+        │   ├── _carousels.scss
+        │   ├── _navigation.scss
+        │   └── _tabs.scss
+        ├── basic
+        │   ├── _buttons.scss
+        │   ├── _feedback.scss
+        │   ├── _forms.scss
+        │   ├── _grid.scss
+        │   ├── _icons.scss
+        │   ├── _normalize.scss
+        │   └── _typography.scss
+        ├── main.scss
+        └── settings
+            └── _settings.scss
+6 directories, 18 files
 -------------------------------------------------------------------------------
+## Maintenance and Best Practices
+-------------------------------------------------------------------------------
+
+
+ 
+-------------------------------------------------------------------------------
+
+
 ## The Grid System
 
 **Description**
