@@ -1,0 +1,78 @@
+@import "../settings/settings";
+
+// Main Container
+.container{
+	width: 95%;
+	margin: 0 auto;
+}
+
+// The Columns: .col-# number of columns. 
+// We have 12 columns as a requirement. We can specify containers that take up a specific number of those 12 columns. 
+[class^="col-"]{ /* Target all the elements that contain class name col- */
+	float: left;
+	padding: 0 $gutter;
+}
+
+// These columns must be contained within a row
+.row{
+	margin-left: -$gutter;/* This will make sure all the elements line up  */
+	margin-right: -$gutter;
+}
+
+// We have to make sure we clear floats since we're floating elements inside this row
+.row:after{
+	content: "";
+	display: table;
+	clear: both;
+}
+
+// Column Widths
+@for $i from 1 through $column-count{
+	.col-#{$i}{
+		width: (100 / $column-count) * $i * 1%;
+	}
+}
+
+// Special Classes
+.col-third{
+	width: (100 / 3) * 1%;
+}
+
+.col-two-thirds{
+	width: (100 / 3) * 2%;
+}
+
+.col-half{
+	width: (100 / 2) * 1%;
+}
+
+.col-quarter{
+	width: (100 / 4) * 1%;
+}
+
+// Images in teh Grid system
+// Whenever you have images in the grid system, you must make them responsive. It will prevent images from leaking outside of page boundaries
+img{
+	max-width: 100%;
+	height: auto;
+}
+
+// Responsive behaviour 
+// Large Screen
+@media(max-width: 1024px){
+	[class^="col-"]{ /* Target all the elements that contain class name col- */
+	float: left;
+	padding: 0 $gutter / 2;
+	}
+	// These columns must be contained within a row
+	.row{
+	margin-left: -$gutter/2;/* This will make sure all the elements line up  */
+	margin-right: -$gutter/2;
+	}
+}
+// Medium Screen
+@media(max-width: 768px){
+	[class^="col-"]{ /* Target all the elements that contain class name col- */
+	width: 100%;
+	}
+}

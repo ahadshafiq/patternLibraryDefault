@@ -1,0 +1,11 @@
+{
+  "name": "patternlibrary",
+  "private": true,
+  "dependencies": {
+    "jquery": "~1.11.1",
+    "components-font-awesome": "~4.2.0",
+    "superfish": "~1.7.4",
+    "animate.css": "~3.2.0",
+    "jquery-cycle2": "~2.1.5"
+  }
+}
