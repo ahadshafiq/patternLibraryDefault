@@ -12,36 +12,46 @@
     <link rel="stylesheet" href="bower_components/components-font-awesome/css/font-awesome.css" />
     <link rel="stylesheet" href="bower_components/superfish/dist/css/superfish.css" />
     <link rel="stylesheet" href="bower_components/animate.css/animate.css" />
+
     <!-- endbower -->
     <!-- endbuild -->
     <!-- build:css(.tmp) styles/main.css -->
     <link rel="stylesheet" href="styles/main.css">
-
-    <style>
-      .demo-col{
-        background-color: #89c4f4;
-        text-align: center;
-        padding: 0 0;
-        display: block;
-        border-radius:  2px;
-      }
-      .row{
-        margin-bottom: 2em;
-      }
-      .demo-col-btn{
-        background-color: #89c4f4;
-        text-align: center;
-        padding: 0.75em 0;
-        display: block;
-        border-radius:  2px;
-      }
-    </style>
+    <!-- External -->
+    <link rel="stylesheet" href="styles/prism.css">
     <!-- endbuild -->
   </head>
   <body>
     <!--[if lt IE 10]>
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
+
+    <!-- Presentation Widget -->
+    <div class="pres-widget">
+      <p><strong>Jump to:</strong></p>
+      <ul>
+        <li><a href="#top">Top</a></li>
+        <li><a href="#nav-grid">The Grid System</a></li>
+        <li><a href="#nav-typography">Typography</a></li>
+        <li><a href="#nav-buttons">Buttons</a></li>
+        <li><a href="#nav-forms">Forms</a></li>
+        <li><a href="#nav-icons">Icons</a></li>
+        <li><a href="#nav-feedback">Feedback</a></li>
+        <li><a href="#nav-navigation">Navigation</a></li>
+        <li><a href="#nav-animations">Animations</a></li>
+        <li><a href="#nav-tabs">Tabs</a></li>
+        <li><a href="#nav-accordions">Accordions</a></li>
+        <li><a href="#nav-carousels">Carousels</a></li>
+      </ul>
+    </div><!-- end of .pres-widget -->
+    <!-- Presentation Header -->
+    <div class="container" id="top">
+      <header class="pres-header">
+        <h3>Ahad Shafiq's Pattern Library</h3>
+          <p>A Project by <a href="https://twitter.com/ahadsh">@ahadsh</a></p>
+      </header><!-- end of .pres-header -->
+    </div><!-- end of .container -->
+
 
     <!-- The Grid System -->
     <section>
@@ -164,13 +174,39 @@
             <div class="demo-col">.col-half</div>
           </div> <!-- end col-half -->
         </div> <!-- end row -->
+
+        <hr>
+
+        <div class="row">
+        <div class="col-4">
+          <h5>Notes</h5>
+
+          <p>Here's a few code snippets that will explain how the grid works.</p>
+        </div> <!-- end col-4 -->
+
+        <div class="col-8">
+          <pre class="line-numbers"><code class="language-markup">&lt;div class=&quot;row&quot;&gt;
+        &lt;div class=&quot;col-quarter&quot;&gt;
+          &lt;div class=&quot;demo-col&quot;&gt;.col-quarter&lt;/div&gt;
+        &lt;/div&gt; &lt;!-- end col-quarter --&gt;
+        &lt;div class=&quot;col-quarter&quot;&gt;
+          &lt;div class=&quot;demo-col&quot;&gt;.col-quarter&lt;/div&gt;
+        &lt;/div&gt; &lt;!-- end col-quarter --&gt;
+        &lt;div class=&quot;col-half&quot;&gt;
+          &lt;div class=&quot;demo-col&quot;&gt;.col-half&lt;/div&gt;
+        &lt;/div&gt; &lt;!-- end col-half --&gt;
+&lt;/div&gt; &lt;!-- end row --&gt;
+</code></pre>
+        </div> <!-- end col-8 -->
+      </div> <!-- end row -->
+
       </div><!-- end of container -->
     </section>
     <hr>
     <!-- Typograpy -->
     <section>
       <div class="container">
-        <h1>Typography</h1>
+        <h1 id="nav-typography">Typography</h1>
         <hr>
         <div class="row">
           <div class="col-half">
@@ -185,14 +221,11 @@
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio quo nihil architecto, qui modi at, accusantium optio laudantium consequuntur delectus facere non alias natus perspiciatis esse officiis eum hic nam tenetur enim ratione reiciendis eos quam. <a href="">Facere minima porro, modi assumenda</a> est inventore.</p>
             
             <p>Eaque tempore nam, quam ipsa ducimus dolores quibusdam sint! Voluptate nobis nesciunt aspernatur <strong>alias expedita</strong> excepturi culpa atque dicta corrupti <em>sed vitae deleniti</em> labore nam cum, maiores dolorum amet sint veritatis, facilis iure dignissimos officia. Magni facilis amet blanditiis, laborum <strike>consectetur corrupti quia odit</strike> nobis minima maxime natus, quibusdam veritatis nostrum aut voluptates possimus vero ab! Fugiat.</p>
-
-<pre><code>
-.row:after{
+<pre class="line-numbers"><code class="language-css">.row:after{
 content: "";
 display: table;
 clear: both;
-}  
-</code></pre>
+}  </code></pre>
 
           </div><!-- end of .col-half -->
         </div><!-- end of .row -->
@@ -232,7 +265,7 @@ clear: both;
 
     <section>
       <div class="container">
-        <h1>Buttons</h1>
+        <h1 id="nav-buttons">Buttons</h1>
         <hr/>
         <div class="row">
           <div class="col-4">
@@ -481,7 +514,7 @@ clear: both;
   <!-- Feedback -->
   <section>
     <div class="container">
-      <h1>Feedback</h1>
+      <h1 id="nav-feedback">Feedback</h1>
       <hr>
       <div class="row">
 
@@ -516,7 +549,7 @@ clear: both;
   <!-- Navigation -->
   <secion>
     <div class="container">
-      <h1>Navigation</h1>
+      <h1 id="nav-navigation">Navigation</h1>
       <hr>
       <div class="row navbar-container">
         <div class="col-4">
@@ -548,7 +581,7 @@ clear: both;
   <!-- Animataions -->
   <section>
     <div class="container">
-      <h1>Animations</h1>
+      <h1 id="nav-animations">Animations</h1>
       <hr>
       <div class="row" id="demo-animations">
         <div class="col-2">
@@ -639,7 +672,7 @@ clear: both;
   <!-- Carousels -->
   <section>
     <div class="container">
-      <h1>Carousels</h1>
+      <h1 id="nav-carousels">Carousels</h1>
       
       <hr>
 
@@ -691,6 +724,7 @@ clear: both;
         <!-- build:js({app,.tmp}) scripts/main.js -->
         <script src="scripts/main.js"></script>
         <script src="http://malsup.github.io/jquery.cycle2.center.js"></script>
+        <script src="scripts/prism.js"></script>
         <!-- endbuild -->
 </body>
 </html>

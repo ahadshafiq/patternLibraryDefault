@@ -23,17 +23,15 @@ This document will describe the structure of each pattern and its behaviour unde
         ├── main.scss **Will just import all scss files
         └── settings
             └── _settings.scss **Contains all the varibles (colors) that most of the scss files link to
-6 directories, 18 files
+3 directories, 14 files in Styles
 </pre>
 -------------------------------------------------------------------------------
-## Maintenance and Best Practices
+## Presentation of the Pattern Library
 -------------------------------------------------------------------------------
 
 
- 
 -------------------------------------------------------------------------------
-
-
+## SASS Code Structure
 ## The Grid System
 
 **Description**

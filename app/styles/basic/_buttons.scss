@@ -42,3 +42,10 @@ a.btn{
 	@extend .btn;
 	font-size: $btn-large-font-size;
 }
+
+// This is for the animated buttons 
+#demo-animations{
+	.demo-col-btn{
+		cursor: pointer;
+	}
+}
