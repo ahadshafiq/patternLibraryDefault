@@ -1,7 +1,8 @@
+
 # Pattern Requirements
 
 This document will describe the structure of each pattern and its behaviour under various screen sizes.
-
+The page is deployed here: http://patternlibrary.herokuapp.com/
 -------------------------------------------------------------------------------
 ## SASS Code Structure
 <pre>
@@ -25,11 +26,6 @@ This document will describe the structure of each pattern and its behaviour unde
             └── _settings.scss **Contains all the varibles (colors) that most of the scss files link to
 3 directories, 14 files in Styles
 </pre>
--------------------------------------------------------------------------------
-## Presentation of the Pattern Library
--------------------------------------------------------------------------------
-
-
 -------------------------------------------------------------------------------
 ## SASS Code Structure
 ## The Grid System
